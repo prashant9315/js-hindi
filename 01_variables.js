@@ -14,7 +14,7 @@ accountCity = "Bengaluru";
 /*
 Prefer not to use var
 because of issue in block scope and functional scope
-
+var scope ke bahar excess kar sakte hai,let and const scope ke bahar access nhi kar payenge
 */
 
 console.table([accountId, accountEmail, accountPassword, accountCity]); //to print all in one way

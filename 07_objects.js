@@ -42,10 +42,10 @@ console.log(obj3);
 const obj6 = { ...obj1, ...obj2, ...obj4 }; //this is another method to merge
 
 //make an array of keys of jsuser
-console.log(object.keys(JSuser));
+console.log(Object.keys(JSuser));
 
 //make an array of values of jsuser
-console.log(object.values(JSuser));
+console.log(Object.values(JSuser));
 
 //make an array of array of each each keys and values like[[keys,values],[keys,values],....]
 console.log(Object.entries(JSuser));
