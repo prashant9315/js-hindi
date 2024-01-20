@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>DOM Learning</title>
+
+<style>
+.bg-black{
+background-color:#212121;
+color:#fff;
+}
+</style>
+</head>
+<body class="bg-black">
+    <div class="parent">
+       <div class="day">Monday</div>
+       <div class="day">Tuesday</div>
+       <div class="day">Wednesday</div>
+       <div class="day">Thursday</div>
+        </div>
+</body>
+<script>
+    //parent -child relation
+    const parent=document.querySelector('.parent')//it will select parent name class
+    console.log(parent);//it will print from line 16-21
+    console.log(parent.children)//it will give children in htmlcollection and print 17-20
+    console.log(parent.children[1].innerHTML)//it will print Tuesday
+
+    console.log(parent.firstElementChild)//it will print line 17
+    console.log(parent.lastElementChild)//it will print line 20
+
+    const dayone=document.querySelector('.day')//it will only select first class day
+    console.log(dayone)//it will print line 17
+    console.log(dayone.parentElement)//it will print line 16-21
+    console.log(dayone.nextElementSibling)//it will print line 18
+
+    console.log(parent.childNodes)//it will print 9 nodelist instaed of 4 nodelist because it count div+(line change)
+</script>
+</html>

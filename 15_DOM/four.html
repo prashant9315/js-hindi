@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code | DOM</title>
+</head>
+<body style="background-color:#212121; color:#fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //add new element in page same as 3rd part
+    
+    function addlanguage(langName){
+        const li=document.createElement('li')
+        li.innerText=`${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguage("python")
+
+    //optimesed approch to add
+
+    function addoptilanguage(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName))//createTextNode is same as innertext
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilanguage("golang")
+
+    //edit element
+    const secondLang = document.querySelector("li:nth-child(2)")
+     //secondLang.innerHTML = "Mojo"
+     const newli = document.createElement ('li')
+     newli.textContent = "Mojo"
+     secondLang.replaceWith (newli)
+
+     //remove element
+     const lastLang = document.querySelector('li:last-child')
+     lastLang.remove()
+</script>
+</html>
